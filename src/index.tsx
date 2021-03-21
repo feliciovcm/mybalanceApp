@@ -45,7 +45,7 @@ createServer({
     // quando receber um post request na rota transactions pegar os dados (data) e adicionar a tabela transactions
     this.post('/transactions', (schema, request) => {
       const data = JSON.parse(request.requestBody);
-      console.log(data);
+     
       
       return schema.create('transaction', data)
     })
